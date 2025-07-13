@@ -1,7 +1,7 @@
 services: 
     db: 
       image: postgres:latest
-      container_name: my_db_mongkhon
+      container_name: my_db_pirapat
       ports: 
         - "65432:5432"
       environment: 
@@ -11,7 +11,7 @@ services:
 
     app:
       image:  prawee/strapi
-      container_name: my_app_mongkhon
+      container_name: my_app_pirapat
       ports:
          - "8080:1337"
       environment:
